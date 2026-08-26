@@ -1,0 +1,44 @@
+{
+  "name": "permanence-mobility",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ignore-pattern .next --ignore-pattern node_modules",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/domain.test.ts tests/authz.test.ts tests/booking.test.ts tests/fees.test.ts tests/reporting.test.ts tests/nav-active.test.ts tests/rendered-html.test.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.109.0",
+    "drizzle-orm": "0.45.2",
+    "next": "15.5.2",
+    "postgres": "^3.4.9",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-hook-form": "^7.62.0",
+    "stripe": "^18.4.0",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "15.5.2",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  },
+  "type": "module"
+}

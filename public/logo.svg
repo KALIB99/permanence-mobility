@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Permanence Mobility">
+  <rect width="64" height="64" rx="14" fill="#0A0A0A"/>
+  <circle cx="32" cy="32" r="22" stroke="#C9A227" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="32" cy="32" r="16" stroke="#D4AF37" stroke-width="1.25" opacity="0.55"/>
+  <path d="M20 38.5c2.2-7.5 6.4-12.5 12-12.5s9.8 5 12 12.5" stroke="#E8D48B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 38h16" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="26.5" cy="38.5" r="2.2" fill="#D4AF37"/>
+  <circle cx="37.5" cy="38.5" r="2.2" fill="#D4AF37"/>
+  <path d="M28 28.5h8c.8 0 1.4.4 1.7 1.1l1.3 3.4H25l1.3-3.4c.3-.7.9-1.1 1.7-1.1Z" fill="#E8D48B"/>
+</svg>
