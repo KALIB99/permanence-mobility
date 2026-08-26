@@ -1,6 +1,8 @@
 import { PortalShell } from "@/components/PortalShell";
 import { PARTNER_PORTAL_NAV } from "@/lib/portal-nav";
 
+export const dynamic = "force-dynamic";
+
 export default function PartnerPortalLayout({
   children,
 }: {

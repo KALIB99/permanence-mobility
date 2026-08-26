@@ -1,6 +1,8 @@
 import { PortalShell } from "@/components/PortalShell";
 import { RENTER_PORTAL_NAV } from "@/lib/portal-nav";
 
+export const dynamic = "force-dynamic";
+
 export default function RenterLayout({ children }: { children: React.ReactNode }) {
   return (
     <PortalShell
