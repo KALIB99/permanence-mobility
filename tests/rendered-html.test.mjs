@@ -51,7 +51,7 @@ test("auth, portals, and health API are present", async () => {
       "app/partners/portal/layout.tsx",
       "app/renter/page.tsx",
       "app/renter/layout.tsx",
-      "middleware.ts",
+      "lib/portal-auth.ts",
       "app/api/health/route.ts",
       "app/api/bookings/route.ts",
       "app/api/webhooks/stripe/route.ts",
@@ -64,7 +64,7 @@ test("auth, portals, and health API are present", async () => {
   assert.match(source, /signInWithPassword|Create account/);
   assert.match(source, /\/admin|\/partners\/portal|\/renter/);
   assert.match(source, /permanence-mobility/);
-  assert.match(source, /updateSession|getUser/);
+  assert.match(source, /requireSignedIn|getUser/);
   assert.match(source, /createHoldInput|assertNoOverlap|buildPeriods/);
   assert.match(source, /getStripe|createConnectAccountLink|createWeeklyPaymentIntent/);
   assert.match(source, /STRIPE_WEBHOOK_SECRET|checkout\.session\.completed/);
